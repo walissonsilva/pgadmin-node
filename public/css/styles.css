@@ -37,7 +37,7 @@ input[type="text"]:focus {
 }
 
 #page .card-content {
-  min-width: 50vw;
+  min-width: 70vw;
   max-width: 70vw;
   background: #f5f5f5;
   border-radius: 1rem;
@@ -73,6 +73,8 @@ input[type="text"]:focus {
 
 #page .query-table {
   overflow-x: auto;
+  max-height: 50vh;
+  overflow-y: auto;
 }
 
 table {

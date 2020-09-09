@@ -1,0 +1,84 @@
+<%- include('./partials/head.ejs') %> 
+
+<body>
+  <div id="page">
+    <div class="card-content">
+      <h1>PgAdmin | Node.js</h1>
+    
+      <form method="POST" action="/query">
+        <div class="form-input">
+          <label for="query">Your Query</label>
+          <textarea name="query" id="query" cols="30" rows="5"></textarea>
+        </div>
+
+        <button type="submit" class="btn-query">Enviar</button>
+      </form>
+
+      <!-- Insert the results of the query here -->
+      <% if (query) { %> 
+        <div class="query-table">
+          <table>
+            <tr>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Points</th>
+              <th>Points</th>
+              <th>Points</th>
+              <th>Points</th>
+              <th>Points</th>
+              <th>Points</th>
+              <th>Points</th>
+              <th>Points</th>
+              <th>Points</th>
+              <th>Points</th>
+            </tr>
+            <tr>
+              <td>Jill</td>
+              <td>Smith</td>
+              <td>50</td>
+              <td>50</td>
+              <td>50</td>
+              <td>50</td>
+              <td>50</td>
+              <td>50</td>
+              <td>50</td>
+              <td>50</td>
+              <td>50</td>
+              <td>50</td>
+            </tr>
+            <tr>
+              <td>Eve</td>
+              <td>Jackson</td>
+              <td>94</td>
+              <td>94</td>
+              <td>94</td>
+              <td>94</td>
+              <td>94</td>
+              <td>94</td>
+              <td>94</td>
+              <td>94</td>
+              <td>94</td>
+              <td>94</td>
+            </tr>
+            <tr>
+              <td>Adam</td>
+              <td>Johnson</td>
+              <td>67</td>
+              <td>67</td>
+              <td>67</td>
+              <td>67</td>
+              <td>67</td>
+              <td>67</td>
+              <td>67</td>
+              <td>67</td>
+              <td>67</td>
+              <td>67</td>
+            </tr>
+          </table>
+        </div>
+      <% } %> 
+    </div>
+  </div>
+</body>
+
+</html>

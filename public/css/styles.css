@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  
+  background-color: #333;
+}
+
+textarea,
+input[type="text"] {
+  background: #fff;
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+textarea:focus,
+input[type="text"]:focus {
+  outline: none;
+  background: #fff;
+  color: #333;
+  border: 1px solid #eee;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+}
+
+/* index.ejs */
+#page {
+  margin: 2rem 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#page .card-content {
+  min-width: 50vw;
+  max-width: 70vw;
+  background: #f5f5f5;
+  border-radius: 1rem;
+  padding: 1.5rem 4rem;
+}
+
+#page .form-input {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+#page .form-input label {
+  font-size: 0.8rem;
+  margin-bottom: 0.4rem;
+  font-weight: 500;
+}
+
+#page .form-input textarea {
+  font-size: 1rem;
+}
+
+#page .btn-query {
+  width: 100px;
+  height: 34px;
+  background: #333;
+  border: none;
+  border-radius: 10px;
+  color: #f5f5f5;
+  margin: 1.4rem 0;
+  font-weight: 500;
+}
+
+#page .query-table {
+  overflow-x: auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
